@@ -1,22 +1,27 @@
 {
-  "name": "fso2022-part3",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./_webservice/index.js",
-    "dev-webservice": "nodemon ./_webservice/index.js",
-    "dev-frontend": "cd vitedev && pn run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  }
+    "name": "fso2022-part3",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.cjs",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "dev-webservice": "nodemon ./index.cjs",
+        "start": "node ./index.cjs",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "axios": "^1.3.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "express": "^4.18.2",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.27",
+        "@types/react-dom": "^18.0.10",
+        "@vitejs/plugin-react-swc": "^3.0.0",
+        "vite": "^4.1.0",
+        "nodemon": "^2.0.20"
+    }
 }
