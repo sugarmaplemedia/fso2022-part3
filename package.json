@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node ./_webservice/index.js",
+    "dev-webservice": "nodemon ./_webservice/index.js",
+    "dev-frontend": "cd vitedev && pn run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
